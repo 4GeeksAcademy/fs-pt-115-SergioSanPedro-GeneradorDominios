@@ -31,27 +31,40 @@
 
 
   <div class="container text-center">
-  <div class="row g-2 g-lg-3">
-    <div class="col-4">
-      <button class="p-3">.com</button>
-    </div>
-    <div class="col-4">
-      <button class="p-3 rounded">.net</button>
-    </div>
-    <div class="col-4">
-      <button class="p-3">.net</button>
-    </div>
-    <div class="col-4">
-      <button class="p-3">.biz</button>
-    </div>
-    <div class="col-4">
-      <button class="p-3">.org</button>
-    </div>
-    <div class="col-4">
-      <button class="p-3">.edu</button>
+    <div class="row g-2 g-lg-3">
+      <div class="col-4">
+        <div class="position-relative d-inline-block">
+          <!-- Círculo/botón .com -->
+          <button type="button" class="rounded-circle bg-info d-flex align-items-center justify-content-center text-white"
+            style="width: 150px; height: 150px; font-size: 2rem; font-weight: bold;">
+            .com
+        </button>
+
+          <!-- Etiqueta "Comercial" superpuesta -->
+          <div class="position-absolute bg-dark text-white px-3 py-1 z-3"
+            style="bottom: 20px; left: 50%; transform: translateX(0%);">
+            Comercial
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <button class="p-3 rounded-circle">.net</button>
+        <p class="z-1">comercios</p>
+      </div>
+      <div class="col-4">
+        <button class="p-3 rounded-circle">.net</button>
+      </div>
+      <div class="col-4">
+        <button class="p-3 rounded-circle">.biz</button>
+      </div>
+      <div class="col-4">
+        <button class="p-3 rounded-circle">.org</button>
+      </div>
+      <div class="col-4">
+        <button class="p-3 rounded-circle">.edu</button>
+      </div>
     </div>
   </div>
-</div>
 
   <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
   <script type="module" src="/app.js"></script>
