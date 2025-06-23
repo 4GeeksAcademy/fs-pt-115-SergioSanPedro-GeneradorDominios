@@ -34,37 +34,100 @@
     <div class="row g-2 g-lg-3">
       <div class="col-4">
         <div class="position-relative d-inline-block">
-          <!-- Círculo/botón .com -->
-          <button type="button" class="rounded-circle bg-info d-flex align-items-center justify-content-center text-white"
+          <!-- Círculo .com -->
+          <button id="comercios" class="btn rounded-circle border-0 d-flex align-items-center justify-content-center"
             style="width: 150px; height: 150px; font-size: 2rem; font-weight: bold;">
             .com
-        </button>
+          </button>
 
-          <!-- Etiqueta "Comercial" superpuesta -->
-          <div class="position-absolute bg-dark text-white px-3 py-1 z-3"
-            style="bottom: 20px; left: 50%; transform: translateX(0%);">
+          <!-- Etiqueta superpuesta -->
+          <span class="position-absolute start-50 translate-middle-y bg-dark text-white px-3 py-1 rounded z-3"
+            style="bottom: 10px; font-size: 0.9rem;">
             Comercial
+          </span>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="position-relative d-inline-block">
+          <!-- Círculo .com -->
+          <button class="btn rounded-circle border-0 d-flex align-items-center justify-content-center"
+            style="width: 150px; height: 150px; font-size: 2rem; font-weight: bold;">
+            .info
+          </button>
+
+          <!-- Etiqueta superpuesta -->
+          <span class="position-absolute start-50 translate-middle-y bg-dark text-white px-3 py-1 rounded z-3"
+            style="bottom: 10px; font-size: 0.9rem;">
+            Información
+          </span>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="position-relative d-inline-block">
+          <!-- Círculo .com -->
+          <button id="comercios" class="btn rounded-circle border-0"
+            style="width: 150px; height: 150px; font-size: 2rem; font-weight: bold;">
+            .net
+          </button>
+
+          <!-- Etiqueta superpuesta -->
+          <div class="position-absolute start-50 translate-middle-y bg-dark text-white px-3 py-2 text-start small rounded"
+            style="bottom: -30px; min-width: 11rem;">
+            <span class="fw-normal">
+              Redes y Proveedores de servicios de Internet
+            </span>
           </div>
         </div>
       </div>
       <div class="col-4">
-        <button class="p-3 rounded-circle">.net</button>
-        <p class="z-1">comercios</p>
+        <div class="position-relative d-inline-block">
+          <!-- Círculo .com -->
+          <button class="btn rounded-circle border-0 d-flex align-items-center justify-content-center"
+            style="width: 150px; height: 150px; font-size: 2rem; font-weight: bold;">
+            .org
+          </button>
+
+          <!-- Etiqueta superpuesta -->
+          <span class="position-absolute start-50 translate-middle-y bg-dark text-white px-3 py-1 rounded z-3"
+            style="bottom: 10px; font-size: 0.9rem;">
+            Organizaciones
+          </span>
+        </div>
       </div>
       <div class="col-4">
-        <button class="p-3 rounded-circle">.net</button>
+        <div class="position-relative d-inline-block">
+          <!-- Círculo .com -->
+          <button class="btn rounded-circle border-0 d-flex align-items-center justify-content-center"
+            style="width: 150px; height: 150px; font-size: 2rem; font-weight: bold;">
+            .biz
+          </button>
+
+          <!-- Etiqueta superpuesta -->
+          <span class="position-absolute start-50 translate-middle-y bg-dark text-white px-3 py-1 rounded z-3"
+            style="bottom: 10px; font-size: 0.9rem;">
+            Negocios
+          </span>
+        </div>
       </div>
       <div class="col-4">
-        <button class="p-3 rounded-circle">.biz</button>
-      </div>
-      <div class="col-4">
-        <button class="p-3 rounded-circle">.org</button>
-      </div>
-      <div class="col-4">
-        <button class="p-3 rounded-circle">.edu</button>
+        <div class="position-relative d-inline-block">
+          <!-- Círculo .com -->
+          <button onclick="dominiosEducacion()" class="btn rounded-circle border-0 d-flex align-items-center justify-content-center"
+            style="width: 150px; height: 150px; font-size: 2rem; font-weight: bold;">
+            .edu
+          </button>
+
+          <!-- Etiqueta superpuesta -->
+          <span class="position-absolute start-50 translate-middle-y bg-dark text-white px-3 py-1 rounded z-3"
+            style="bottom: 10px; font-size: 0.9rem;">
+            Educación
+          </span>
+        </div>
       </div>
     </div>
   </div>
+
+  <h3 class="text-center my-5" id="listaDominios">Elige un dominio y te muestro una lista con posibles ejemplos</h3>
 
   <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
   <script type="module" src="/app.js"></script>
